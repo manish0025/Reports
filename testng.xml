@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="crm-automation" parallel="tests" thread-count="1">
+	<listeners>
+		<listener class-name="Util.ExtentReport" />
+		<listener class-name="Util.TestListener"/>
+		<listener class-name="Util.RetryListener"/>
+		
+	</listeners>
+	<test
+		name="com.proptiger.api.testsuites.rcm.RCMTermsheetKeySearch"
+		preserve-order="true">
+		<classes>
+			<class
+				name="com.qa.reports.TestClass">
+				<methods>
+					<include name="TC_01" />
+					<include name="TC_02" />
+					<include name="TC_03" />
+					<include name="TC_04" />
+					<include name="TC_05" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+</suite>

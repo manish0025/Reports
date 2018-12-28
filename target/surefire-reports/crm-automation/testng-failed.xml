@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [crm-automation]" parallel="tests">
+  <listeners>
+    <listener class-name="Util.ExtentReport"/>
+    <listener class-name="Util.TestListener"/>
+    <listener class-name="Util.RetryListener"/>
+  </listeners>
+  <test name="com.proptiger.api.testsuites.rcm.RCMTermsheetKeySearch(failed)" parallel="tests">
+    <classes>
+      <class name="com.qa.reports.TestClass">
+        <methods>
+          <include name="close"/>
+          <include name="before"/>
+          <include name="TC_01"/>
+        </methods>
+      </class> <!-- com.qa.reports.TestClass -->
+    </classes>
+  </test> <!-- com.proptiger.api.testsuites.rcm.RCMTermsheetKeySearch(failed) -->
+</suite> <!-- Failed suite [crm-automation] -->

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <echo>[copy Config file]dev</echo>
+  <touch file="Config.properties"/>
+  <copy file="Config_dev.properties" tofile="Config.properties" overwrite="true"/>
+</target>
+</project>
